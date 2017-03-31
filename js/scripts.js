@@ -41,7 +41,7 @@ $(document).ready(function() {
     var number = $("#numInput").val();
     var result = pingPong(number);
     if (!result) {
-      alert("Not a whole number");
+      alert("Must be a positive whole number");
     } else {
       for (var i = 0; i < result.length; i++) {
         $("#output ul").append("<li>" + result[i] + "</li>");

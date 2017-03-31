@@ -1,12 +1,12 @@
+h1 {
+  font-size: 50px;
+}
+
 #header {
   background-color: #F4DEB5;
   text-align: center;
-  padding-bottom: 65px;
-  padding-top: 50px;
-}
-
-h1 {
-  font-size: 50px;
+  padding-bottom: 45px;
+  padding-top: 30px;
 }
 
 #content-top {
@@ -18,6 +18,23 @@ h1 {
   background-color: #E6E6E6;
 }
 
+#numInput {
+  width: 300px;
+}
+
 #content-left {
   background-color: #90BB90;
+}
+
+#content-left h3 {
+  color: #F4DEB5;
+}
+
+#content-left p {
+  color: white;
+  font-size: 16px;
+}
+
+#username {
+  color: #5388AE;
 }

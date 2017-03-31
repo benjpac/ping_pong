@@ -14,9 +14,9 @@
 // }
 
 function pingPong(number) {
-  var answers = [];
+  var resultArray = [];
   // check if NaN, negative, and float
-  if (isNaN(number) || number < 0 || (number % 1 !== 0)) {
+  if (isNaN(number) || (number < 0) || (number % 1 !== 0)) {
     return;
   }
   for (var i = 1; i <= number; i++) {
@@ -30,9 +30,9 @@ function pingPong(number) {
     if (!result) {
       result = i.toString();
     }
-    answers.push(result);
+    resultArray.push(result);
   }
-  return answers;
+  return resultArray;
 }
 
 $(document).ready(function() {
@@ -40,9 +40,11 @@ $(document).ready(function() {
     event.preventDefault();
     var number = $("#numInput").val();
     var result = pingPong(number);
+    $("#output ul").remove();
     if (!result) {
       alert("Must be a positive whole number");
     } else {
+      $("#output").append("<ul>");
       for (var i = 0; i < result.length; i++) {
         $("#output ul").append("<li>" + result[i] + "</li>");
       }

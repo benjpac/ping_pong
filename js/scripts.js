@@ -15,8 +15,8 @@
 
 function pingPong(number) {
   var answers = [];
-  debugger;
-  if (isNaN(number)) {
+  // check if NaN or float
+  if (isNaN(number) || (number % 1 !== 0)) {
     return;
   }
   for (var i = 1; i <= number; i++) {
@@ -41,7 +41,7 @@ $(document).ready(function() {
     var number = $("#numInput").val();
     var result = pingPong(number);
     if (!result) {
-      alert("Not a number");
+      alert("Not a whole number");
     } else {
       for (var i = 0; i < result.length; i++) {
         $("#output ul").append("<li>" + result[i] + "</li>")

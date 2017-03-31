@@ -41,7 +41,7 @@ Output: error
 
 Return error if negative
 Input: -1
-Output: error
+Output: error_
 
 ## Known Bugs
 

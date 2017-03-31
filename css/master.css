@@ -2,6 +2,14 @@ h1 {
   font-size: 50px;
 }
 
+html, body {
+  height: 100%;
+}
+
+.content, .col-md-9, .col-md-3, .container-fluid {
+  height: 100%;
+}
+
 #header {
   background-color: #F4DEB5;
   text-align: center;
@@ -16,6 +24,18 @@ h1 {
 
 #content-main {
   background-color: #E6E6E6;
+}
+
+#form form p {
+  display: inline-block;
+}
+
+#form form input {
+  display: inline-block;
+}
+
+#form form button {
+  display: inline-block;
 }
 
 #content-left {
@@ -33,4 +53,8 @@ h1 {
 
 #username {
   color: #5388AE;
+}
+
+#output {
+  clear: both;
 }

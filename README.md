@@ -1,32 +1,59 @@
 # _Ping Pong_
 
-#### _{Brief description of application}, 3/31/17_
+#### _Enter a number and return strings based on divisibility, 3/31/17_
 
-#### By _**{List of contributors}**_
+#### By _**Ben Metzger**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
+
+Numbers divisible by 3 are replaced with "ping"
+Numbers divisible by 5 are replaced with "pong"
+Numbers divisible by 15 are replaced with "ping-pong"
+A user should be able to enter a new number and see new results over and over again._
 
 ## Specifications
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+_Return number if not divisible by 3 or 5
+Input: 1
+Output: 1
+
+Return Ping is divisible by 3
+Input: 3
+Output: Ping
+
+Return Pong if divisible by 5
+Input: 10
+Output: Pong
+
+Return PingPong if divisible by 3 and 5
+Input: 15
+Output: PingPong
+
+Return error if NaN
+Input: hello
+Output: error
+
+Return error if float
+Input: 1.2
+Output: error
+
+Return error if negative
+Input: -1
+Output: error
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Contact me at benjpac@gmail.com if you have any comments_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_Bootstrap, Jquery_
 
 ### License
 

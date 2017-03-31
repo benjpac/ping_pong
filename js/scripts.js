@@ -1,6 +1,5 @@
 // function pingPong(number) {
 //   var answer = [];
-//   if (number )
 //   for (var i = 1; i <= number; i++) {
 //     if ((i % 3 === 0) && (i % 5 === 0)) {
 //       answer.push("Ping Pong");
@@ -17,6 +16,9 @@
 function pingPong(number) {
   var answers = [];
   debugger;
+  if (isNaN(number)) {
+    return;
+  }
   for (var i = 1; i <= number; i++) {
     var string = "";
     if (i % 3 === 0) {
@@ -26,7 +28,7 @@ function pingPong(number) {
       string += "Pong"
     }
     if (!string) {
-      string = i;
+      string = i.toString();
     }
     answers.push(string);
   }
@@ -36,10 +38,14 @@ function pingPong(number) {
 $(document).ready(function() {
   $("#form form").submit(function(event) {
     event.preventDefault();
-    var number = parseInt($("#numInput").val());
-    var answer = pingPong(number);
-    for (var i = 0; i < answer.length; i++) {
-      $("#output ul").append("<li>" + answer[i] + "</li>")
+    var number = $("#numInput").val();
+    var result = pingPong(number);
+    if (!result) {
+      alert("Not a number");
+    } else {
+      for (var i = 0; i < result.length; i++) {
+        $("#output ul").append("<li>" + result[i] + "</li>")
+      }
     }
   });
 });

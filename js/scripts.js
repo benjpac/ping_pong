@@ -4,35 +4,35 @@
 //     if ((i % 3 === 0) && (i % 5 === 0)) {
 //       answer.push("Ping Pong");
 //     } else if (i % 3 === 0) {
-//       answer.push("Ping")
+//       answer.push("Ping");
 //     } else if (i % 5 === 0) {
-//       answer.push("Pong")
+//       answer.push("Pong");
 //     } else
-//       answer.push(i)
+//       answer.push(i);
 //   }
-//   return answer
+//   return answer;
 // }
 
 function pingPong(number) {
   var answers = [];
-  // check if NaN or float
-  if (isNaN(number) || (number % 1 !== 0)) {
+  // check if NaN, negative, and float
+  if (isNaN(number) || number < 0 || (number % 1 !== 0)) {
     return;
   }
   for (var i = 1; i <= number; i++) {
-    var string = "";
+    var result = "";
     if (i % 3 === 0) {
-      string += "Ping";
+      result += "Ping";
     }
     if (i % 5 === 0) {
-      string += "Pong"
+      result += "Pong";
     }
-    if (!string) {
-      string = i.toString();
+    if (!result) {
+      result = i.toString();
     }
-    answers.push(string);
+    answers.push(result);
   }
-  return answers
+  return answers;
 }
 
 $(document).ready(function() {
@@ -44,8 +44,8 @@ $(document).ready(function() {
       alert("Not a whole number");
     } else {
       for (var i = 0; i < result.length; i++) {
-        $("#output ul").append("<li>" + result[i] + "</li>")
+        $("#output ul").append("<li>" + result[i] + "</li>");
       }
     }
-  });
-});
+  })
+})

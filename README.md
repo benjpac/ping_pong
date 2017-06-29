@@ -57,6 +57,6 @@ _Bootstrap, Jquery_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*Determine the license under which this application can be used.  See below for more details on licensing.*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_List of contributors or company name_**
